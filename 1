@@ -20,27 +20,24 @@ namespace ConsoleApplicationTest
         }
         static void Main(string[] args)
         {
-
+            //Проверка
+            
             Random rnd = new Random();
             List<int> listTest = new List<int>();
+            
             for (int i = 0; i < 30; i++)
             {
                 listTest.Add(rnd.Next(5));
                 System.Console.Write(listTest[i] + " ");
             }
 
-            removeAllValues(listTest, 3);
+            removeAllValues(listTest, 3); //Вызов
             System.Console.WriteLine("");
 
             for (int i = 0; i < listTest.Count; i++)
-            {
-
                 System.Console.Write(listTest[i] + " ");
-            }
 
             System.Console.ReadLine();
-
         }
-
     }
 }
